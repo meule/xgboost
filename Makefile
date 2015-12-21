@@ -3,7 +3,7 @@ export CXX = $(if $(shell which g++-5 2>/dev/null),g++-5,g++)
 
 export MPICXX = mpicxx
 export LDFLAGS= -pthread -lm
-export CFLAGS = -Wall -O3 -msse2  -Wno-unknown-pragmas -funroll-loops
+export CFLAGS = -Wall -O3  -Wno-unknown-pragmas -funroll-loops
 # java include path
 export JAVAINCFLAGS = -I${JAVA_HOME}/include -I${JAVA_HOME}/include/linux -I./java
 
